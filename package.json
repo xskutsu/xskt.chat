@@ -1,0 +1,37 @@
+{
+	"name": "xskt.chat",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A \"bring your own token\" chat interface for LLMs.",
+	"keywords": [
+		"chat",
+		"llm",
+		"ai",
+		"bring-your-own-token",
+		"ai-chat",
+		"chat-interface",
+		"language-model",
+		"large-language-model",
+		"chatbot",
+		"xskt",
+		"t3.chat-alternative",
+		"frontend",
+		"messaging",
+		"chat-ui"
+	],
+	"homepage": "https://github.com/xskutsu/xskt.chat#readme",
+	"bugs": {
+		"url": "https://github.com/xskutsu/xskt.chat/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xskutsu/xskt.chat.git"
+	},
+	"license": "AGPL-3.0-or-later",
+	"author": "xskutsu",
+	"engines": {
+		"node": ">=22",
+		"pnpm": "10.x"
+	},
+	"packageManager": "pnpm@10.6.4"
+}
