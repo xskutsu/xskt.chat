@@ -4,6 +4,9 @@
 		"url": "https://github.com/xskutsu/xskt.chat/issues"
 	},
 	"description": "A \"bring your own token\" chat interface for LLMs.",
+	"devDependencies": {
+		"dotenv": "^16.4.7"
+	},
 	"engines": {
 		"node": ">=22",
 		"pnpm": "10.x"
@@ -26,6 +29,7 @@
 		"chat-ui"
 	],
 	"license": "AGPL-3.0-or-later",
+	"main": "server.js",
 	"name": "xskt.chat",
 	"packageManager": "pnpm@10.6.4",
 	"private": true,
@@ -33,5 +37,9 @@
 		"type": "git",
 		"url": "git+https://github.com/xskutsu/xskt.chat.git"
 	},
+	"scripts": {
+		"start": "node ./server.js"
+	},
+	"type": "module",
 	"version": "1.0.0"
 }
