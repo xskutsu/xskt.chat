@@ -1,8 +1,14 @@
 {
-	"name": "xskt.chat",
-	"private": true,
-	"version": "1.0.0",
+	"author": "xskutsu",
+	"bugs": {
+		"url": "https://github.com/xskutsu/xskt.chat/issues"
+	},
 	"description": "A \"bring your own token\" chat interface for LLMs.",
+	"engines": {
+		"node": ">=22",
+		"pnpm": "10.x"
+	},
+	"homepage": "https://github.com/xskutsu/xskt.chat#readme",
 	"keywords": [
 		"chat",
 		"llm",
@@ -19,19 +25,13 @@
 		"messaging",
 		"chat-ui"
 	],
-	"homepage": "https://github.com/xskutsu/xskt.chat#readme",
-	"bugs": {
-		"url": "https://github.com/xskutsu/xskt.chat/issues"
-	},
+	"license": "AGPL-3.0-or-later",
+	"name": "xskt.chat",
+	"packageManager": "pnpm@10.6.4",
+	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/xskutsu/xskt.chat.git"
 	},
-	"license": "AGPL-3.0-or-later",
-	"author": "xskutsu",
-	"engines": {
-		"node": ">=22",
-		"pnpm": "10.x"
-	},
-	"packageManager": "pnpm@10.6.4"
+	"version": "1.0.0"
 }

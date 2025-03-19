@@ -1,7 +1,7 @@
 {
 	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
 	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
 	"editor.renderControlCharacters": true,
 	"editor.tabSize": 4,
 	"files.eol": "\n",
