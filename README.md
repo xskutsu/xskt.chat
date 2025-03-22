@@ -53,4 +53,4 @@ pnpm run build
 pnpm run serve
 ```
 
-You should now be able to access xskt.chat at [localhost:3001](http://localhost:3001/). Yay!
+You should now be able to access xskt.chat at [localhost:8000](http://localhost:8000/). Yay!
