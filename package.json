@@ -1,17 +1,16 @@
 {
-	"author": "xskutsu",
-	"bugs": {
-		"url": "https://github.com/xskutsu/xskt.chat/issues"
-	},
+	"name": "xskt.chat",
+	"version": "1.0.0",
 	"description": "A \"bring your own token\" chat interface for LLMs.",
-	"devDependencies": {
-		"dotenv": "^16.4.7"
+	"author": "xskutsu",
+	"license": "AGPL-3.0-or-later",
+	"main": "server.js",
+	"scripts": {
+		"build": "esbuild src/index.ts --tsconfig=tsconfig.json --bundle --outdir=public/dist --minify --sourcemap --platform=browser",
+		"serve": "esbuild src/index.ts --tsconfig=tsconfig.json --bundle --outdir=public/dist --minify --sourcemap --platform=browser --serve --servedir=public",
+		"watch": "esbuild src/index.ts --tsconfig=tsconfig.json --bundle --outdir=public/dist --minify --sourcemap --platform=browser --watch",
+		"serve-watch": "esbuild src/index.ts --tsconfig=tsconfig.json --bundle --outdir=public/dist --minify --sourcemap --platform=browser --serve --servedir=public --watch"
 	},
-	"engines": {
-		"node": ">=22",
-		"pnpm": "10.x"
-	},
-	"homepage": "https://github.com/xskutsu/xskt.chat#readme",
 	"keywords": [
 		"chat",
 		"llm",
@@ -28,18 +27,24 @@
 		"messaging",
 		"chat-ui"
 	],
-	"license": "AGPL-3.0-or-later",
-	"main": "server.js",
-	"name": "xskt.chat",
-	"packageManager": "pnpm@10.6.4",
-	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/xskutsu/xskt.chat.git"
 	},
-	"scripts": {
-		"start": "node ./server.js"
+	"bugs": {
+		"url": "https://github.com/xskutsu/xskt.chat/issues"
 	},
-	"type": "module",
-	"version": "1.0.0"
+	"homepage": "https://github.com/xskutsu/xskt.chat#readme",
+	"dependencies": {
+		"esbuild": "^0.25.1"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"engines": {
+		"node": ">=20.x",
+		"pnpm": "9.x"
+	}
 }
