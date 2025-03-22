@@ -2,3 +2,7 @@
 	color: #CCAAAA !important;
 	background-color: #000000 !important;
 }
+
+body {
+	zoom: 150%;
+}

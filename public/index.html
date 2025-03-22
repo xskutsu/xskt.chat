@@ -3,6 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="A &quot;bring your own token&quot; chat interface for LLMs.">
+	<meta name="keywords"
+		content="chat, llm, ai, bring-your-own-token, ai-chat, chat-interface, language-model, large-language-model, chatbot, xskt, t3.chat-alternative, frontend, messaging, chat-ui">
+	<meta name="author" content="xskutsu">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>xskt.chat</title>
 	<link rel="stylesheet" href="./css/main.css">
@@ -12,9 +16,9 @@
 	<div>
 		<div>
 			<span>xskt.chat</span>
-			<button>new chat</button>
+			<button id="new-chat-button">new chat</button>
 		</div>
-		<div>
+		<div id="conversations-container">
 			<div>
 				<span>what is the meaning of life</span>
 				<button>pin</button>
@@ -23,14 +27,14 @@
 		</div>
 		<div>
 			<div>
-				<span>Tsranuna</span>
-				<span>deepseek-r1:free</span>
+				<span id="info-user">Tsranuna</span>
+				<span id="info-model">deepseek-r1:free</span>
 			</div>
-			<button>settings</button>
+			<button id="settings-button">settings</button>
 		</div>
 	</div>
 	<div>
-		<div>
+		<div id="dialogue-container">
 			<div>
 				<div>
 					<span>Tsranuna</span>
@@ -56,10 +60,10 @@
 			</div>
 		</div>
 		<div>
-			<textarea placeholder="Type your message here..."></textarea>
+			<textarea id="input-textarea" placeholder="Type your message here..."></textarea>
 			<diV>
-				<button>terminate</button>
-				<button>send</button>
+				<button id="terminate-button">terminate</button>
+				<button id="send-button">send</button>
 			</diV>
 		</div>
 	</div>
